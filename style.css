@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: whitesmoke;
+    color: black;
+
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 100;
+    transition: .3s;
+    margin-bottom: 300px;
+}
+
+
+.logo{
+    position: relative;
+    width: 200px;
+    margin-left: 70px;
+}
+
+
+.navbar{
+    position: relative;
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    position: relative;
+}
+
+
+.navbar a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+    border-radius: 5px;
+}
+.navbar a:hover:after{
+    width: 100%;
+}
+
+
+#menu-icon{
+    position: relative;
+    font-size: 3.6rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    margin-top: 300px;
+}
+
+.home .contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.home .left{
+    margin-left: 70px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.home .left h1{
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+
+.home .left p{
+    font-size: 17px;
+    color: black;
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+.home .left h2{
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+
+.home .left .social i{
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    padding: 15px 15px;
+    border-radius: 50%;
+    background: black;
+}
+
+
+.home .left .social i:nth-child(2){
+    border-radius: 50%;
+}
+
+
+.home .right .top h1{
+    font-size: 80px;
+    font-weight: 400;
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+
+
+.home .right .top h2{
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+
+
+.home .right .bottom img{
+    width: 800px;
+    margin-left: 600px;
+    position: absolute;
+    top: 30%;
+    right: -10%;
+}
+
